@@ -135,9 +135,7 @@ app.get("/customers/booking-count", (request, response) => {
 
 //SERVER LISTENING IN PORT
 app.get("/", (request, response) => {
-  response
-    .json({ error: `Welcome to Hall Booking Server` })
-    .send(`WELCOME TO HALLBOOKING API`);
+  response.json({ message: `Welcome to Hall Booking Server` });
 });
 app.listen(port, (request, response) => {
   console.log(`Server running in port ${port}`);
